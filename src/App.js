@@ -7,7 +7,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <button>切换</button>
         <p>
           编辑 <code>src/App.js</code> 保存刷新.
         </p>
