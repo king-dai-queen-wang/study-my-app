@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-
+import intl from 'react-intl-universal';
+import {Language} from './ChangeLang'
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <button>切换</button>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          编辑 <code>src/App.js</code> 保存刷新.
         </p>
         <a
           className="App-link"
@@ -15,8 +17,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+         学习react
         </a>
+        <Language></Language>
       </header>
     </div>
   );
