@@ -16,6 +16,7 @@
   },
   "scripts": {
     "i18n": "xt-i18n --scan && xt-i18n --packExcel",
+    "i18n-u": "xt-i18n --unpackExcel",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
