@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import intl from 'react-intl-universal';
-import {Language} from './ChangeLang'
+import { useI18n } from './ChangeLang.bak.js';
+import React from 'react';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+  const {lang, changeLanguage} = useI18n('en_US')
+  return <div className="App">
+            <header className="App-header">
+              <img src={logo} className="App-logo" alt="logo" />
         <p>
           编辑 <code>src/App.js</code> 保存刷新.
         </p>
@@ -18,10 +19,11 @@ function App() {
         >
          学习react
         </a>
-        <Language></Language>
-      </header>
-    </div>
-  );
+        </header>
+            {/* <Language lang={lang} setLang={setLang}></Language> */}
+            <button onClick={() => changeLanguage()}>切换语言{lang}</button>
+          </div>
+  
 }
 
 export default App;
