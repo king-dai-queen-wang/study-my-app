@@ -8,7 +8,7 @@ module.exports = {
   locales: 'zh_CN,en_US,zh_HK',
   excelName: 'collect.xlsx',
   autoTranslate: {
-    enable: true,
+    enable: false,
     name: "BaiduTranslate",
     i18nMapping: {
       'zh_CN': 'zh',

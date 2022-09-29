@@ -12,10 +12,10 @@
     "react-intl-universal": "^2.5.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-    "xt-i18n": "^0.0.7"
+    "xt-i18n": "0.0.8"
   },
   "scripts": {
-    "i18n-scan": " xt-i18n --scan",
+    "i18n-scan": "xt-i18n --scan",
     "i18n-packExcel": " xt-i18n --packExcel",
     "i18n-unpackExcel": "xt-i18n --unpackExcel",
     "start": "react-scripts start",
