@@ -1,5 +1,6 @@
 
-import I18N from 'src/utils/I18N';
+import React from 'react';
+import I18N from '../utils/I18N';
 const Demo01 = () => {
     const a2 = I18N.pages.Demo01.quanQiuShouKuanJi2
     const obj = { test: I18N.pages.Demo01.jiChuBanYongJiu };

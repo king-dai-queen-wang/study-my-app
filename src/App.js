@@ -1,13 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import intl from 'react-intl-universal';
-import { useI18n } from './ChangeLang.bak.js';
+import { Language } from './ChangeLang-kiwi.js';
 import React from 'react';
-import {Demo01} from './pages/Demo01'
+import Demo01 from './pages/Demo01.tsx'
 
 
 function App() {
-  const {lang, changeLanguage} = useI18n('en_US')
   const test  = (name) => {
     return `我是${name}`
   }
@@ -28,8 +27,8 @@ function App() {
               </a>
               <Demo01/>
         </header>
-        {/* <Language lang={lang} setLang={setLang}></Language> */}
-        <button onClick={() => changeLanguage()}>切换语言{lang}</button>
+        <Language></Language>
+        {/* <button onClick={() => changeLanguage()}>切换语言{lang}</button> */}
       </div>
   
 }
